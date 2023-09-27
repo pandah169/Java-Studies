@@ -1,2 +1,3 @@
-# Java-Studies
-This is just somewhere to keep my studies on, the easy one's at least, probably, in this repository are going to be the most easy Java things, like basic codes, and stuff
+# Java Studies
+
+I want to leave this repository here, so I can complement it with Java programs, starting from the very basics, to those who know something more complex and professional, anyone can use these codes as part of their study.
