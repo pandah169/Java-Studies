@@ -1,59 +1,69 @@
-package basicCalculator;
-import java.util.Scanner;
+package basicCalculator;  //Including my package (name of the folder i'm in.);
+import java.util.Scanner;  //Importing the class Scanner from java.util package;
 
+//Creating my class;
 public class Main
 {
+  //Creating my main method - THIS IS MANDATORY;
   public static void main(String[] args)
   {
+    //My scanner with IN;
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("======================");
-    System.out.print("Digite o número 1: ");
-    int num1 = scanner.nextInt();
-    System.out.print("Digite o número 2: ");
+    //Getting the numbers
+    System.out.println("======================");  //Just to make the code more aesthetic;
+    System.out.print("Type the first number: ");  //Asking the first number;
+    int num1 = scanner.nextInt();  //Storing the number in a variable;
+    System.out.print("Type the second number: ");  //Doing the same thing as the first number;
     int num2 = scanner.nextInt();
 
-    System.out.println("\nDigite a operação desejada: ");
-    System.out.println("1- Soma\n2- Subtração\n3- Multiplicação\n4- Divisão\n");
-    System.out.print("R: ");
-    int escolha = scanner.nextInt();
+    //Choosing the operation;
+    System.out.println("\nEnter the desired mathematical operation: ");
+    System.out.println("1- Sum\n2- Subtraction\n3- Multiplication\n4- Division\n");
+    System.out.print("Answer: ");
+    int choose = scanner.nextInt();
     System.out.println("");
 
-    switch(escolha)
+    //Switch to choose the operation the program will do it;
+    switch(choose)
     {
+      //Doing the sum;
       case 1:
-        int soma = num1 + num2;
-        System.out.println("Soma de " + num1 + " + " + num2 + " = " + soma);
+        int sum = num1 + num2;
+        System.out.println("Sum of " + num1 + " + " + num2 + " = " + sum);
         break;
 
+      //Doing the subtraction;
       case 2:
-        int subtracao = num1 - num2;
-        System.out.println("Subtração de " + num1 + " - " + num2 + " = " + subtracao);
+        int sub = num1 - num2;
+        System.out.println("Subtraction of " + num1 + " - " + num2 + " = " + sub);
         break;
 
+      //Doing the multiplication;
       case 3:
-        int multiplicacao = num1 * num2;
-        System.out.println("Multiplicação de " + num1 + " * " + num2 + " = " + multiplicacao);
+        int mult = num1 * num2;
+        System.out.println("Multiplication of " + num1 + " * " + num2 + " = " + mult);
         break;
 
+      //Doing the division;
       case 4:
+        //Be careful about dividing by zero (not possible);
         if (num2 != 0)
         {
-          double divisao = (double) num1 / num2;
-          System.out.println("Divisão de " + num1 + " / " + num2 + " = " + divisao);
+          double div = (double) num1 / num2;
+          System.out.println("Division of " + num1 + " / " + num2 + " = " + div);
         }
         else
         {
-          System.out.println("Não é possível dividir por zero.");
+          System.out.println("Not possible to divide for zero.");
         }
         break;
 
       default:
-        System.out.println("Opção inválida.");
+        System.out.println("Invalid option.");
         break;
     }
     scanner.close();
     System.out.println("======================");
   }
 }
-
