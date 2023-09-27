@@ -1,4 +1,4 @@
-package estudo1;
+package basicCalculator;
 import java.util.Scanner;
 
 public class Main
