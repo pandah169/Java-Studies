@@ -69,10 +69,12 @@ public class Main
         }
         System.out.println("Your password is: " + randomString.toString());
         break;
+      //In case of invalid options.
       default:
         System.out.println("Invalid option, please try again.");
         break;
     }
+    //Closing the Scanner
     userPass.close();
   }
 }
