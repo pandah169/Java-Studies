@@ -40,7 +40,6 @@ public class Main
     {
       //FIRST CASE - JUST NUMBERS
       case 1:
-        
         for(int i = 0; i <= passLength; i++)
         {
           int randomIndex = randomPass.nextInt(charactersPass1.length());
